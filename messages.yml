@@ -1,0 +1,193 @@
+#
+#
+# This is the messsages file.
+# You can change any messages that are in this file
+#
+# If you want to reset a message back to the default,
+# delete the entire line the message is on and restart the server.
+# 	
+# 	
+
+prefix: ''
+alreadyin: '&cDu bist bereits im Pakour!'
+start:
+  score: '&aDer Pakur wurde gestartet! &7Versuche deinen Highscore von &r{SCORE}&7 zu knacken!'
+  first: '&aDer Pakur wurde gestartet!'
+  no-area-player: '&cKeine Region oder Spieler namens ''{INPUT}'' wurde gefunden!'
+  unknown-player: '&cSpieler wurde nicht gefunden!'
+  unknown-area: '&cDie Region wurde nicht gefunden!'
+  started-other: '&aDer Parkour wurde für {PLY} gestartet!'
+  started-other-area: '&aDer Parkour wurde für &l&f{PLY}&r&a in der Region &l&f{AREA}&r&a gestartet!'
+noperm: '&cDu hast keine Rechte um diese Aktion durchzuführen!'
+score: '&7Punktestand: &r&l{SCORE}'
+beatrecord: '&aHerzlichen Glückwunsch!&7 Du hast deinen ehemaligen Highscore von &f{SCORE}&7 Punkten geschlagen!'
+beatrecord-ingame: '&aHerzlichen Glückwunsch! &7Du hast deinen vorherigen Highscore geschlagen! Mach weiter so!'
+disabledworld: '&cDu kannst den Pakour in dieser Welt nicht starten!'
+block:
+  potion: '&cNope!'
+  place: '&cNope!'
+  break: '&cNope!'
+numberformatexception: '&cDas ist keine valide Zahl!'
+areafull: '&cParkour konnte nicht gestartet werden, da die Region voll ist! &7Bitte versuche es später erneut.'
+must-be-ingame: '&cDu must in-game sein um diesen Befehl auszuführen!'
+not-in-game: '&cDu musst diesen Befehl von der Konsole aus ausführen!'
+couldnt-find-player: '&cDer Spieler {PLAYER} wurde nicht Gefunden. Vielleicht hast du dich vertippt.'
+list:
+  header: '&9Spieler im Parkour:'
+  format: '&6{NAME} &7- &e{SCORE} Sprünge'
+  none: '&7Keine'
+nobodys-played-yet: '&cNiemand hat diesen Parkour bisher gespielt!'
+first-position: '&eErste Position wurde gesetzt!'
+second-position: '&eZweite Position wurde gesetzt!'
+setup-done: '&aDu kannst nun den Befehl &2/ajParjour start&a ausführen, um den Parkour zu starten!'
+reload:
+  usage: '&cVerwendung: /{CMD} reload <file>&7 Dateien: {POSS}'
+fallpos:
+  set: '&aFall-Position wurde gesetzt!'
+  removed: '&aFall-Position wurde entfernt!'
+top:
+  header: '&9HIGHSCOREs:'
+  header-area: '&9Die Highscores der Region {AREA}:'
+  format: '&a{#}. &6{NAME} &e{SCORE} sprünge'
+fall:
+  normal: '&cDu bist runtergefallen! &7Deine Punktzahl war &r{SCORE}'
+  force:
+    base: '&cDie Runde wurde beendet, weil '
+    reasons:
+      teleport: du teleportiert wurdest.
+      afk: du AFK warst! 
+errors:
+  blocknotair:
+    base: '&c&lFEHLER:&r&c Der Block ist keine Luft!'
+    player: '&6Melde dies einem Administrator und versuche es später erneut.'
+    admin: '&6Stelle sicher, dass die Parkour-Region völlig aus Luft besteht & das das Plugin richtig aufgesetzt wurde, durch das lesen von /{CMD} setup'
+  notsetup:
+    base: '&cajParkour wurde noch nicht aufgesetzt.'
+    player: '&6Frage einen Administrator, damit er das Plugin aufsetzt!'
+    admin: '&6Für Infos, wie man das Plugin einstallt, führe folgenden Befehl aus: /{CMD} setup'
+  too-many-players: '&cEs sind zu viele Spieler im Parkour, versuche es später erneut.'
+migrate:
+  more-args: '&cBitte gib die Quelle an, von der du die Punktestände übertragen willst!'
+  success: '&a{COUNT} Punktestände wurden übertragen!'
+  error: '&cOops... etwas ist schiefgelaufen, für mehr Informationen, siehe bitte in der Konsole nach.'
+placeholders:
+  stats:
+    no-data: '---'
+    time-format: '{m}m {s}s'
+  current:
+    no-data: '0'
+commands:
+  help:
+    header: '&aajParkour Plugin - von &2ajgeiss0702&a!'
+    start: '&6 /{CMD} start &7- &9Startet den Parkour!'
+    startarea: '&6 /{CMD} start <area> &7- &9Startet den Parkour in einer bestimmten Region.'
+    startothers: '&6 /{CMD} start <player> [area] &7- &9Startet den Parkour für einen anderen Spieler in einer bestimmten Region.'
+    top: '&6 /{CMD} top &7- &9Zeigt die Top 10!'
+    list: '&6 /{CMD} list &7- &9Listet alle Spieler auf die gerade in einem Parkour sind & zeigt deren aktuellen Punktestand.'
+    setup: '&6 /{CMD} setup &7- &9Befehl, um das Plugin auf zu setzten. &7(benötigt die Permission: ajparkour.setup)'
+    portals: '&6 /{CMD} portals &7- &9Befehl um Protale auf zu setzen.'
+    areas: '&6 /{CMD} areas &7- &9Listet alle geladenen Regionen auf.'
+  setup:
+    header: '&aajParkour&2 setup Befehle'
+    create: '&6 /{CMD} setup create &7- &9Erstellt eine Region'
+    pos1: '&6 /{CMD} setup pos1 &7- &9Setzt die 1. Position'
+    pos2: '&6 /{CMD} setup pos2 &7- &9Setzt die 2. Position'
+    we: '&6 /{CMD} setup we &7- &9Setze die 1. und 2. Position mit WorldEdit'
+    fallpos: '&6 /{CMD} setup fallpos &7- &9Setzt die Fall-Position!'
+    edit: '&6 /{CMD} edit &7- &9Läd eine bestehende Region in die Berarbeitungs-Warteschlange.'
+    info: '&6 /{CMD} setup info &7- &9Zeigt an, welche Punkte bisher gesetzt wurden!'
+    diff: '&6 /{CMD} setup difficulty &7- &9Setzt den Schwierigskeitsgrad der Region!'
+    max: '&6 /{CMD} setup max &7- &9Setzt die Maximale Anzahl an Spielern die gleichzeitig in der Region sein dürfen.
+    save: '&6 /{CMD} setup save &7- &9Speichert & aktiviert die Region. (Beendet das editieren.)'
+  portals:
+    header: '&aajParkour&2 portal Befehle'
+    list: '&6 /{CMD} portals list &7- &9Zeigt eine Liste aller Portale.'
+    create: '&6 /{CMD} portals create &7- &9Erstellt ein Portal.'
+    remove: '&6 /{CMD} portals remove &7- &9Entfernt ein Portal.'
+  listareas:
+    header: '&9Geladene Parkour-Regionen:'
+    format: '&7 - &a{NAME} &7Schwierigskeitsgrad: &9{DIFFICULTY}'
+    none: '&7Keine Regionen geladen!'
+  not-on-whitelist: '&cDu kannst diesen Befehl nicht ausführen, während du im Parkour bist!'
+not-from-console: '&cDu kannst diesen Befehl nicht von der Konsole aus ausführen!'
+setup:
+  no-name: '&cBitte gib deiner Region einen Namen!'
+  invalid-name: '&cDu kannst deine Region nicht so nennen.'
+  edit:
+    no-name: '&cBitte gib den Namen der Region an, die du editieren willst!'
+    loaded: '&aRegion wurde zum editieren geladen! Setzte die Positionen erneut mit dem Befehl: /{CMD} setup'
+    no-area: '&cRegion wurde nicht gefunden!'
+  need-to-create: '&aDu musst einen Region erstellen, bevor du sie editieren kannst!'
+  we:
+    not-installed: '&cUm die Positionen mit WorldEdit zu setzten musst du WorldEdit installieren! &7Versuche die im Plugin intigrierten pos1 & pos2 setup Befehle.'
+    incomplete-selection: '&cDu musst eine ganze WorldEdit-Auswahl machen, befor du diesen Befehl ausführen kannst!'
+  created: '&aDie Region wurde erstellt & zur Berarbeitungs-Warteschlande hinzugefügt. Führe &2/ajParkour setup&a aus, um zu wissen wie du die Region richtig berarbeitest!'
+  already-creating: '&cDu berarbeitest bereits eine andere Region! &aEntweder speicherst du die Region die du eben berarbeitet hast, oder führe diesen Befehl erneut aus, um die aktuell zu berarbeitende Region zu überschreiben. 
+  (&c&lBEACHTE:&r&c Wenn du die gerade zu berarbeitende Region überschreibst, wird alles, was du für diese Region eingestellt hast gelöscht!)'
+  info:
+    header: '&6Farben: &agesetzt &7nicht gesetzt (optional) &cnicht gesetzt (erforderlich)'
+  set:
+    pos1: '&aErste Position gesetzt!'
+    pos2: '&aZweite Position gesetzt!'
+    fallpos: '&aFall-Position gesetzt!'
+    we: '&aPositionen gesetzt!'
+    diff: '&aSchwierigkeitsgrad gesetzt!'
+    max: '&aMaximale Spieler gesetzt!'
+  max:
+    need-args: '&cBitte gib eine Zahl an!'
+  diff:
+    not-valid: '&cUngültiger Schwierigkeitsgrad! &7Gültige Schwierigkeitsgräde: &feasy&7, &fmedium&7,
+      &fhard&7, &fexpert&7 & &fbalanced'
+    need-args: |-
+      &cBitte gib einen Schwierigkeitsgrad an! &7Gültige Schwierigkeitsgräder: &feasy&7, &fmedium&7, &fhard&7, &fexpert&7, and &fbalanced&7.
+      &aBalanced sorgt dafür, dass je höher der Punktestand des Spielers ist, desto schwieriger wird es!
+  save:
+    not-done: '&cDu hast nicht alle erforderlicher einstellungen gesetzt! &7Überprüfe &f/{CMD} setup
+      info&7 um nachzuschauen, was du noch einstellen musst.'
+    success: '&aRegion {NAME} gespeichert & geladen!'
+  area:
+    too-small: |-
+      &cDie Region, die du erstellt hast, ist sehr klein. Die empfohlene Mindestgröße(in Blöcken) beträgt: 20x20x20!
+      &7Du kannst die Region so erstellen, wie sie ist, aber behalte im Hinterkopf, dass es zu Problemen führen kann!
+      &7Deine Region hat folgende Größe(in Blöcken): {l}x{w}x{h} (XxZxY)
+portals:
+  list:
+    header: '&2Parkour Portale'
+    format:
+      area: '&2{NAME} &7- &a{COORDS} &7- &a{AREA}'
+      no-area: '&2{NAME} &7- &a{COORDS}'
+  create:
+    help: '&cVERWENDUNG: /{CMD} portals create <name> [area]'
+    success: '&aPortal ''{NAME}'' wurde an deiner aktuellen Position erstellt! &7Es kann sein, dass du den Server neustarten musst,
+    damit das Portal funktioniert.'
+  remove:
+    help: '&cBitte gib den Namen, der Portals an, das du löschen willst!'
+    cannot-find: '&cEs wurde kein Portal mit diesem Namen gefunden! Stelle sicher das du den Namen & Groß-/Kleinschreibung richtig hast!'
+    success: '&aPortal ''{NAME}'' wurde gelöscht!'
+    no-portals: '&cBisher existieren keine Portale!'
+gui:
+  selector:
+    title: Block Wähler
+    items:
+      random:
+        title: '&rZufällige Blöcke'
+        lore: '&7Diese Option wählt zufällig irgendwelche Blöcke aus.'
+      selected:
+        lore: '&aAktuell ausgewählt'
+      nextpage:
+        name: '&a&lNächste Seite'
+      prevpage:
+        name: '&a&lVorherige Seite'
+items:
+  blockselector:
+    name: '&aBlock Wähler'
+reset:
+  usage: '&cVERWENDUNG: /{CMD} reset <player>'
+  success: '&aDer Punktestand von {PLAYER} wurde auf 0 gesetzt!'
+blockselector:
+  openedfor: '&aÖffnet den Blockwähler für {PLAYER}'
+areas:
+  remove:
+    help: '&cBitte gib den Namen der Region ein, die du löschen willst!'
+    cannot-find: '&cEs wurde keine Region mit diesem Namen gefunden! Stelle sicher das du den Namen & Groß-/Kleinschreibung richtig hast!'
+    success: '&aRegion ''{NAME}'' wurde gelöscht!'
